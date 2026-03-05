@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Đảm bảo tên nhánh là main (hoặc master tùy repo của bạn)
+    branches: [main]
 
 jobs:
   build:
@@ -14,20 +14,19 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9 # Chỉ định phiên bản pnpm
+          version: 9
 
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm' # Thiết lập cache cho pnpm để tăng tốc độ build
-
+          # XÓA DÒNG cache: 'pnpm' Ở ĐÂY ĐỂ TRÁNH LỖI "packages field missing"
+          
       - name: Install dependencies
-        # Sử dụng --no-frozen-lockfile để tránh lỗi nếu bạn lỡ quên update lockfile
+        # Thêm --no-frozen-lockfile để pnpm tự tạo lại lockfile nếu cần
         run: pnpm install --no-frozen-lockfile
 
       - name: Generate Static Site
-        # Lệnh này sẽ tạo ra thư mục .output/public
         run: pnpm run generate
 
       - name: Upload artifact
