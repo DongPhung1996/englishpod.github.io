@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title": "Calling In Sick",
+    "level": "Elementary",
+    "audioUrl": "/audio/lesson1.mp3",
+    "transcript": [
+      { "speaker": "A", "text": "Hello, Daniel speaking, how may I help you?" },
+          { "speaker": "B", "text": "Hi, Daniel, Julie here." },
+          { "speaker": "A", "text": "Hi, Julie, how are you?" },
+          { "speaker": "B", "text": "Actually, I'm feeling quite ill today." },
+          { "speaker": "A", "text": "I'm sorry to hear that. What's wrong?" },
+          { "speaker": "B", "text": "I think I'm coming down with the flu. I have a headache, a sore throat a runny nose and I'm feeling slightly feverish." }
+    ],
+    "vocabulary": [
+      { "word": "Coming down with", "meaning": "Bắt đầu bị bệnh", "example": "I think I'm coming down with a cold." },
+      { "word": "Feverish", "meaning": "Có triệu chứng sốt", "example": "I'm feeling slightly feverish." }
+    ],
+    "sample_essay": "When calling in sick, it is important to be professional and concise. You should state your reason clearly..."
+  }
+]
