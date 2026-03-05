@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   app: {
     // Thay 'my-english-pod' bằng tên Repository của bạn trên GitHub
-    baseURL: '/my-english-pod/', 
+    baseURL: '/', 
     buildAssetsDir: 'assets',
   },
   ssr: true, 
